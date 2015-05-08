@@ -21,7 +21,7 @@
     <% @datasets.each do |dataset| %>
       <tr>
         <td><%= dataset.nombre %></td>
-        <td><%= dataset.html %></td>
+        <td><%= dataset.html.truncate(27) %></td>
         <td><%= dataset.mi_url %></td>
         <td><%= dataset.bloque %></td>
         <td><%= dataset.campo1 %></td>

@@ -7,7 +7,7 @@
 
 <p>
   <strong>Html:</strong>
-  <%= @dataset.html %>
+  <%= @dataset.html.truncate(27) %>
 </p>
 
 <p>
@@ -55,5 +55,5 @@
 
 <p>
   Download:
-  <%= link_to "CSV", dataset_path(@dataset, format: "csv") %> |
+  <%= link_to "CSV", dataset_path(@dataset, format: "csv") %> 
 </p>
