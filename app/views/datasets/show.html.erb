@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @dataset.nombre %>
+</p>
+
+<p>
+  <strong>Html:</strong>
+  <%= @dataset.html %>
+</p>
+
+<p>
+  <strong>Mi url:</strong>
+  <%= @dataset.mi_url %>
+</p>
+
+<p>
+  <strong>Bloque:</strong>
+  <%= @dataset.bloque %>
+</p>
+
+<p>
+  <strong>Campo1:</strong>
+  <%= @dataset.campo1 %>
+</p>
+
+<p>
+  <strong>Campo2:</strong>
+  <%= @dataset.campo2 %>
+</p>
+
+<p>
+  <strong>Campo3:</strong>
+  <%= @dataset.campo3 %>
+</p>
+
+<p>
+  <strong>Campo4:</strong>
+  <%= @dataset.campo4 %>
+</p>
+
+<p>
+  <strong>Campo5:</strong>
+  <%= @dataset.campo5 %>
+</p>
+
+<p>
+  <strong>Campo6:</strong>
+  <%= @dataset.campo6 %>
+</p>
+
+<%= link_to 'Edit', edit_dataset_path(@dataset) %> |
+<%= link_to 'Back', datasets_path %>
+
+<p>
+  Download:
+  <%= link_to "CSV", dataset_path(@dataset, format: "csv") %> |
+</p>

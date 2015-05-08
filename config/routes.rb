@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :datasets
+
   resources :things
 
   devise_for :users

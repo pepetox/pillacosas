@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125091252) do
+ActiveRecord::Schema.define(version: 20150508190808) do
+
+  create_table "datasets", force: true do |t|
+    t.string   "nombre"
+    t.text     "html"
+    t.string   "mi_url"
+    t.string   "bloque"
+    t.string   "campo1"
+    t.string   "campo2"
+    t.string   "campo3"
+    t.string   "campo4"
+    t.string   "campo5"
+    t.string   "campo6"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "things", force: true do |t|
     t.string   "name"
